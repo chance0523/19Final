@@ -1,6 +1,6 @@
 #----------------------------------#
-# 반드시 home dir에서 실행시키시오   
-# 또는 file open의 dir을 변경하시오  
+# 반드시 home dir에서 실행시키시오
+# 또는 file open의 dir을 변경하시오
 #----------------------------------#
 
 
@@ -17,7 +17,8 @@ def q(f):
         # 답을 하는 line #
         elif i % 2 == 1:
             print("답 : ", end='')
-            input()
+            if input() == '0':
+                break
             print("답 : " + line, end='')
 
         # 끝나면 break #
@@ -28,7 +29,7 @@ def q(f):
 
 # 여기에 text file의 이름을 적으시오 #
 # "file_name/file_name/file_name.txt" #
-f = open("FINAL19/psy/1.bio.txt", 'r', encoding='UTF8')
+f = open("4.memory.txt", 'r', encoding='UTF8')
 q(f)
 # close #
 f.close()
