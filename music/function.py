@@ -27,9 +27,26 @@ def q(f):
         i += 1
 
 
-# 여기에 text file의 이름을 적으시오 #
-# "file_name/file_name/file_name.txt" #
-f = open("4.memory.txt", 'r', encoding='UTF8')
+print("1. music")
+print("2. med")
+print("3. renbar")
+print("4. go")
+print("5. nang")
+print("6. train")
+
+a = int(input())
+if a == 1:
+    f = open("1.music.txt", 'r', encoding='UTF8')
+elif a == 2:
+    f = open("2.med.txt", 'r', encoding='UTF8')
+elif a == 3:
+    f = open("3.renbar.txt", 'r', encoding='UTF8')
+elif a == 4:
+    f = open("4.go.txt", 'r', encoding='UTF8')
+elif a == 5:
+    f = open("5.nang.txt", 'r', encoding='UTF8')
+elif a == 6:
+    f = open("train.txt", 'r', encoding='UTF8')
 q(f)
 # close #
 f.close()
