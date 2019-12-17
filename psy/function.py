@@ -26,6 +26,22 @@ def q(f):
             break
         i += 1
 
+def n(f):
+    i=1
+    while True:
+        line = f.readline()
+        if i%2==1:
+            print(line,end='')
+            i-=1
+        elif i%2==0:
+            print("답 : ",end='')
+            if input()=='0':
+                break
+            print("답 : "+line,end='')
+            i+=2
+
+        if not line:
+            break
 
 print("1. bio")
 print("2. sensation_and_perception")
@@ -33,6 +49,7 @@ print("3. learning")
 print("4. memory")
 print("5. emotion")
 print("6. train")
+print("7. new")
 
 a = int(input())
 if a == 1:
@@ -47,6 +64,10 @@ elif a == 5:
     f = open("5.emotion.txt", 'r', encoding='UTF8')
 elif a == 6:
     f = open("train.txt", 'r', encoding='UTF8')
+elif a == 7:
+    f = open("7.new.txt", 'r', encoding='UTF8')
 q(f)
+#n(f)
 # close #
 f.close()
+
