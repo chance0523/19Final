@@ -33,6 +33,8 @@ print("3. renbar")
 print("4. go")
 print("5. nang")
 print("6. train")
+print("7. person")
+print("8. final")
 
 a = int(input())
 if a == 1:
@@ -47,6 +49,10 @@ elif a == 5:
     f = open("5.nang.txt", 'r', encoding='UTF8')
 elif a == 6:
     f = open("train.txt", 'r', encoding='UTF8')
+elif a == 7:
+    f = open("7.person.txt", 'r', encoding='UTF8')
+elif a == 8:
+    f = open("8.final.txt", 'r', encoding='UTF8')
 q(f)
 # close #
 f.close()
